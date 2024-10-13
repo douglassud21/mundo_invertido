@@ -14,7 +14,7 @@
 
 /*Tema Claro*/
 .light-theme {
-    --page-background: linear-gradient (
+    --page-background: linear-gradient(
         180deg,
         #fff 0%,
         #fff 65%,
@@ -33,7 +33,7 @@
 
 /*Tema Escuro*/
 .dark-theme {
-    --page-background: linear-gradient (
+    --page-background: linear-gradient(
         180deg,
         #050000 0%,
         #130404 65%,
@@ -50,9 +50,22 @@
     --footer-background-color: #000;
 }
 
+.dark-theme button,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+    letter-spacing: 5px;
+    font-weight: normal;
+}
+
+.dark-theme .invert-element {
+    transform: rotateZ(180deg) scaleX(-1);
+}
+
 /*Estilos genericos*/
 * {
     box-sizing: border-box;
+    transition: 1s;
 
     margin: 0;
     padding: 0;
@@ -382,9 +395,42 @@ section {
     color: var(--field-backgrond-color);
 }
 
+/*Footer*/
 
+footer {
+    padding: 60px 0;
+    background-color: var(--footer-background-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
 
+footer p {
+    max-width: 700px;
+    margin-bottom: 24px;
+}
 
+footer::before,
+footer::after {
+    content: "";
+    width: 300px;
+    height: 200px;
+    background: url("/assets/images/footer/tape.svg") no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -30px;
+}
 
+footer::before {
+    left: -50px;
+    transform: rotateZ(-10deg);
+}
 
+footer::after {
+    right: -50px;
+    transform: rotateZ(10deg);
+}
 
