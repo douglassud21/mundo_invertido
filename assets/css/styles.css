@@ -149,20 +149,23 @@ header::before {
     color: var(--primary-color-contrast);
 }
 
+/*Estilos dos personagens no mundo*/
 
+.world-characters {
+    position: absolute;
 
+    width: 100%;
+    max-width: 900px;
+}
 
+#top-characters {
+    height: 100%;
 
+    background-color: var(--character-top-image-color);
+    mask: var(--character-top-image-src) bottom / contain no-repeat;
+    --webkit-mask: var(--character-top-image-src) bottom / contain no-repeat;
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
