@@ -434,3 +434,97 @@ footer::after {
     transform: rotateZ(10deg);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsivo*/
+
+@media (max-width: 768px) {
+    header {
+        min-height: 600px; /* Reduzindo a altura mínima do header */
+    }
+
+    .header-content {
+        padding: 50px 15px; /* Ajusta o espaçamento interno */
+        max-width: 90%; /* Aumenta a largura máxima em telas menores */
+    }
+
+    .header-content img {
+        width: 90%; /* Torna a imagem um pouco maior em dispositivos móveis */
+    }
+
+    .header-content p {
+        margin: 20px 0 40px; /* Ajusta os espaçamentos dos parágrafos */
+    }
+
+    .header-content button {
+        padding: 10px 20px; /* Ajusta o tamanho do botão para telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Muda a direção do layout para coluna em mobile */
+        align-items: center;    /* Centraliza os itens em telas menores */
+        margin-bottom: 50px;    /* Reduz o espaçamento inferior */
+    }
+
+    #section-inverted-world {
+        flex-direction: column; /* Coloca os itens verticalmente */
+        text-align: center;     /* Centraliza o texto para melhor legibilidade em mobile */
+    }
+
+    #section-inverted-world img {
+        width: 280px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #section-inverted-world .section-texts {
+        width: 100%; /* A largura do texto ocupa toda a tela */
+        padding: 0 20px; /* Adiciona espaçamento lateral para evitar que o texto encoste nas bordas */
+    }
+
+    #section-inverted-world .section-texts h1 {
+        max-width: 100%; /* Permite que o título ocupe mais espaço em telas menores */
+    }
+}
+
+@media (max-width: 768px) {
+    #section-stranger-things-trailer {
+        display: flex;
+        flex-direction: column; /* Organiza o texto e vídeo em coluna */
+        align-items: center;    /* Centraliza os elementos */
+        margin-top: 60px;
+    }
+
+    #section-stranger-things-trailer .section-texts {
+        width: 100%;  /* O texto ocupa 100% da tela em dispositivos móveis */
+        text-align: center;  /* Alinha o texto ao centro */
+        padding: 0 20px;  /* Adiciona espaçamento lateral para evitar encostar nas bordas */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #section-stranger-things-trailer .section-texts h2 {
+        max-width: 100%;  /* O título ocupa mais espaço em telas menores */
+        margin-bottom: 20px;  /* Adiciona espaçamento entre o título e o vídeo */
+    }
+
+    #section-stranger-things-trailer .video-frame iframe {
+        width: 100%; /* Garante que o iframe ocupe toda a largura da tela no mobile */
+        height: auto; /* Ajusta a altura proporcionalmente */
+        bottom: 0;
+        left: 0;
+    }
+}
