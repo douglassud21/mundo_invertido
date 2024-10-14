@@ -1,7 +1,7 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baskervville:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baskervville:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
 /*Theme*/
 
@@ -41,7 +41,7 @@
     );
     --header-background-color: #220f0f;
     --highLight-color: #fff;
-    --featured-font-family: "Rubik", sans-serif;
+    --featured-font-family: "Creepster", sans-serif;
     --character-bottom-image-src: url("/assets/images/characters/kids-on-the-bike.svg");
     --character-bottom-image-color: rgba(255, 255, 255, 0.1);
     --character-top-image-src: url("/assets/images/characters/inverted-world-monster.svg");
